@@ -35,7 +35,6 @@ class PerplexityLabs(AsyncGeneratorProvider, ProviderModelMixin):
     ) -> AsyncResult:
         headers = {
             "accept": "*/*",
-            "accept-encoding": "gzip, deflate" + (", br" if has_brotli else ""),
             "accept-language": "en-US",
             "referer": "",
             "sec-ch-ua": "\"Google Chrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
